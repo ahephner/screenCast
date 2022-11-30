@@ -1,0 +1,30 @@
+.exampleHolder{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.full-view{
+    height:229px;
+    width:308px;
+}
+.video-available{
+    height:205px;
+    width:308px;
+}
+/* need to start with text box larger */
+.textareacont{
+    position: relative;
+    width:auto;
+    height:auto;
+    display: inline-block;
+    padding:0;
+}
+.feedback__btn{
+    position:absolute;
+    bottom:8px;
+    right:15px;
+    padding:4px;
+    cursor:pointer;
+}
