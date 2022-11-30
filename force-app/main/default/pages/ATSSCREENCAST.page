@@ -182,6 +182,7 @@
       }
     }
 
+    //take a screen shot
     const takeScreenShot = async () => {
       try {
         const stream = await navigator.mediaDevices.getDisplayMedia({

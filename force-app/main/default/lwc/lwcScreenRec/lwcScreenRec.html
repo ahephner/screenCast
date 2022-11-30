@@ -49,15 +49,17 @@
             </div>
         </div>
         <!-- Setting up a text area -->
-        <div class="slds-form-element slds-form-element_stacked">
-            <label class="slds-form-element__label"> Description </label>
+        <div class="slds-form-element slds-form-element_stacked textbox">
+            <label class="slds-form-element__label"> 
+                <abbr class="slds-required" title="required">* </abbr>
+                Description </label>
             <div class="slds-form-element__control">
                 <div class="textareacont">
                     <div class="feedback__btn">
                         <lightning-icon icon-name="utility:unmuted" size="xx-small" onclick={startSpeaking}
                             if:false={vfNotLoaded}></lightning-icon>
                     </div>
-                    <textarea name="Description" placeholder="Description…"
+                    <textarea name="Description" placeholder="Please be specific"
                         class={descriptionCls}></textarea>
                 </div>
             </div>
@@ -67,8 +69,8 @@
             <lightning-button-group if:false={videoInProgress}>
                 <lightning-button label="Take Screenshot" icon-name="utility:photo" onclick={startScreenShot}
                     disabled={vfNotLoaded} variant="brand"></lightning-button>
-                <lightning-button label="Screen Recorder" icon-name="utility:video" disabled={vfNotLoaded}
-                    onclick={startScreenShare} variant="destructive"></lightning-button>
+                <!-- <lightning-button label="Screen Recorder" icon-name="utility:video" disabled={vfNotLoaded}
+                    onclick={startScreenShare} variant="destructive"></lightning-button> -->
             </lightning-button-group>
         </div>
 
